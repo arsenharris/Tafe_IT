@@ -165,6 +165,154 @@ end or ctrl Z
 
 ### 2.3 The command Structure
 
+This topic covers the basic structure of commands for the Cisco IOS. A network administrator must know the basic IOS command structure to be able to use the CLI for device configuration.
+A Cisco IOS device supports many commands. Each IOS command has a specific format, or syntax, and can only be executed in the appropriate mode.
+```bash
+Switch> show ip protocols
+```
+- Switch: Promt
+- show: Command
+- ip protocols: keyword
+
+```bash
+Switch> ping 192.168.10.5
+```
+- Switch: Promt
+- ping: Command
+- 192.168.10.5: argument
+
+After entering each complete command, including any keywords and arguments, press the Enter key to submit the command to the command interpreter.
+
+A command might require one or more arguments. To determine the keywords and arguments required for a command, refer to the command syntax. The syntax provides the pattern, or format, that must be used when entering a command.
+
+For instance, the syntax for using the description command is description string. 
+
+The argument is a string value provided by the user. The description command is typically used to identify the purpose of an interface.
+
+The following examples demonstrate conventions used to document and use IOS commands:
+
+**ping** *ip-address* - The command is ping and the user-defined argument is the ip-address of the destination device. For example, ping 10.10.10.5.
+
+**traceroute** *ip-address* - The command is traceroute and the user-defined argument is the ip-address of the destination device. For example, traceroute 192.168.254.254.
+
+If a command is complex with multiple arguments, you may see it represented like this:
+
+```bash
+  Switch(config-if)# switchport port-security aging {  static | time time |     type   {absolute | inactivity}
+```
+
+The command will typically be followed with a detailed description of the command and each argument.
+
+The Cisco IOS Command Reference is the ultimate source of information for a particular IOS command.
+
+- Help features
+
+The IOS has two forms of help available: context-sensitive help and command syntax check.
+
+Context-sensitive help enables you to quickly find answers to these questions:
+
+**Which commands are available in each command mode?**
+**Which commands start with specific characters or group of characters?**
+**Which arguments and keywords are available to particular commands?**
+
+To access context-sensitive help, simply enter a question mark, ?, at the CLI.
+
+Command syntax check verifies that a valid command was entered by the user. When a command is entered, the command line interpreter evaluates the command from left to right. If the interpreter understands the command, the requested action is executed, and the CLI returns to the appropriate prompt. However, if the interpreter cannot understand the command being entered, it will provide feedback describing what is wrong with the command.
+
+
+```bash
+Switch> ?
+```
+- connect
+- disable
+- disconnect
+- enable
+- exit
+- logout
+- ping
+- resume
+- show
+- telnet
+- terminal
+- trace-route
+
+```bash
+Switch(config)# in?
+```
+- interface
+
+This shows the argumet or parameter after the command
+
+```bash
+Switch(config)# interface ?
+```
+
+- Ethernet
+- FastEthernet
+- GigabitEthernet
+- Port-channel
+- Clan
+- range
+#### Hot keys and Shortcuts
+
+The IOS CLI provides hot keys and shortcuts that make configuring, monitoring, and troubleshooting easier.
+
+Commands and keywords can be shortened to the minimum number of characters that identify a unique selection. For example, the configure command can be shortened to conf because configure is the only command that begins with conf. An even shorter version, con, will not work because more than one command begins with con. Keywords can also be shortened.
+
+The table lists keystrokes to enhance command line editing.
+
+Key stroke | Description
+
+**Tab** | completes a partial command name entry ( con tab wont work and there is more than 1 commands)
+
+Backspace | Erases the character to the lft of the cursor
+
+ctrl+D | erases the chracter at the cursor
+
+ctrl K | Erases characters from the cursor to the end of comman line
+
+esc D | erases all characters from the cursor to the end of the word 
+
+Ctrl U or ctrl x | erases all characters from the cursor back to the beginnning of the comman line 
+
+ctrl W | erases the word to the left of cursor 
+
+**ctrl A** | moves cursor to the beginnning to the left 
+
+left arrow or ctrl B | moves cursor one character to the left 
+
+esc B | moves the cursor back one word to the left 
+
+esc F | moves the cursor forward one word to the right 
+
+right arrow or ctrl F | moves the cursor one character to the right 
+
+**ctrl E** | moves the cursor to the end of command line 
+
+**up arrow or ctrl p**| recalls the previous command in the history buffer, beginning with the most recent command 
+
+**down arrow or ctrl n** | goes to the next line in the history buffer
+
+ctrl r or ctrl I or ctrl L | redisplays the system prompt and comman line after a console message is recevied. 
+
+
+Note: While the Delete key typically deletes the character to the right of the prompt, the IOS command structure does not recognize the Delete key.
+
+When a command output produces more text than can be displayed in a terminal window, the IOS will display a “--More--” prompt. The following table describes the keystrokes that can be used when this prompt is displayed.
+
+- Enter key displays the next line 
+- space bar displays the next screen 
+- any other key ends the display string, returning to the previous prompt ( except y which answers yes to the more promp and acts like the space bar)
+  
+This table lists commands used to exit out of an operation.
+
+**ctrl c**| when in any configuration mode, ends the configuration mode and returns to privilged exe vmode. when in set up mode, aborts back to the comman promt 
+
+**ctrl z** | when in config mode, ends the config mode and return to privileged exec mode 
+
+ctrl shift 6 | all purpose break sequence used to abort DNS lookups, traceroutes, pings etc 
+
+
 ### 2.4 Basic Device Configuration
 
 ### 2.5 Save Configuration
