@@ -149,7 +149,6 @@ Hypertext Transfer Protocol (HTTP) - This protocol governs the way a web server 
 • Internet Protocol (IP) - This protocol is responsible for delivering messages from the sender to the receiver. IP is used by routers to forward the messages across multiple networks.
 • Ethernet- This protocol is responsible for the delivery of messages from one NIC to another NIC on the same Ethernet local area network (LAN).
 
-
 ###### Quiz: 
 BGP and OSPF are examples of which type of protocol?
 Network communication
@@ -175,14 +174,61 @@ This protocol is responsible for guaranteeing the reliable delivery of informati
 TCP
 HTTP
 Ethernet
+
+
 ### 3.3 Protocols Suits
+#### 3.3.1 Network Protocol Suites 
+#### 3.3.2 Evolution of Protocol Suites 
+#### 3.3.3 TCP/IP Protocol Example
+#### 3.3.4 TCP/IP Protocol Suite
+#### 3.3.5 NTCP/IP Communication Process
+
+
+
+
+
+
 
 ### 3.4 Standards Organisations 
+#### 3.4.1 Open Standards 
+#### 3.4.2 Internet Standards
+#### 3.4.3 Electronic and communications Standards 
+
+
+
+
+
+
 
 ### 3.5 Reference Models
+#### 3.5.1 The benefits of using a layered model
+#### 3.5.2 The OSI reference model
+#### 3.5.3 TCP/IP Protocol Model
+#### 3.5.4 OSI and TCP/IP model comparison
+
+
 
 ### 3.6 Data Encapsulation
+#### 3.6.1 Segmenting Messages
+#### 3.6.2 Sequencing
+#### 3.6.3 Protocol data units
+#### 3.6.4 Encapsulation 
+#### 3.6.5 De-capsulation
+
+
+
+
+
 
 ### 3.7 Data Access
+#### 3.7.1 Addresses
+#### 3.7.2 Layer 3 Logical Address
+#### 3.7.3 Devices on the same network
+#### 3.7.4 Role of the datalink layer addresses - same IP network
+#### 3.7.5 Devices on a remote network
+#### 3.7.6 Role of the network layer addresses 
+#### 3.7.7 Role of the sata link layer addreses- different IP Network
+#### 3.7.8 Data link Addresses  
+
 
 
