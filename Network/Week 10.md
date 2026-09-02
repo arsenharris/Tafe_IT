@@ -1,4 +1,4 @@
-### BAsic Router Configuration
+### Basic Router Configuration
 
 ### 10.1. Configure Initial Router Settings
 ### 10.2. Configure Interfaces
