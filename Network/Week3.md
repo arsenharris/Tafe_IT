@@ -15,7 +15,6 @@ Data Access | Explain how local hosts access local resources on a network.
 
 
 ### 3.1 The Rules
-
 #### 3.1.2 Communication fundamentals 
 Networks vary in size, shape, and function. They can be as complex as devices connected across the internet, or as simple as two computers directly connected to one another with a single cable, and anything in-between. However, simply having a wired or wireless physical connection between end devices is not enough to enable communication. For communication to occur, devices must know "how" to communicate.
 People exchange ideas using many different communication methods. However, all communication methods have the following three elements in common:
@@ -52,6 +51,8 @@ One of the first steps to sending a message is encoding. Encoding is the process
 #### 3.1.7 Message Formatting and Encapsulation
 
 When a message is sent from source to destination, it must use a specific format or structure. Message formats depend on the type of message and the channel that is used to deliver the message.
+
+<img src="Encapsulation.png" width="300" alt="TCP vs OSI ">
 
 #### 3.1.8 Message Size
 
